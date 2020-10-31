@@ -32,7 +32,14 @@ class GameScreen extends PureComponent {
         );
       case GameType.GENRE:
         return (
-          <GenreQuestionScreen />
+          <GenreQuestionScreen
+            question={question}
+            onAnswer={() => {
+              this.setState((prevState) => ({
+                step: prevState.step + 1,
+              }));
+            }}
+          />
         );
     }
 
