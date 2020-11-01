@@ -1,4 +1,4 @@
-const AVATAR_URL = `https://api.adorable.io/avatars/128`;
+const AVATAR_URL = `https://www.placecage.com/`;
 
 export default [
   {
@@ -26,13 +26,13 @@ export default [
       src: `https://upload.wikimedia.org/wikipedia/commons/4/4e/BWV_543-fugue.ogg`,
     },
     answers: [{
-      picture: `${AVATAR_URL}/${Math.random()}`,
+      picture: `${AVATAR_URL}100/100`,
       artist: `John Snow`,
     }, {
-      picture: `${AVATAR_URL}/${Math.random()}`,
+      picture: `${AVATAR_URL}200/200`,
       artist: `Jack Daniels`,
     }, {
-      picture: `${AVATAR_URL}/${Math.random()}`,
+      picture: `${AVATAR_URL}300/300`,
       artist: `Jim Beam`,
     }],
   },

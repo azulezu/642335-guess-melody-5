@@ -28,7 +28,14 @@ class GameScreen extends PureComponent {
     switch (question.type) {
       case GameType.ARTIST:
         return (
-          <ArtistQuestionScreen />
+          <ArtistQuestionScreen
+            question={question}
+            onAnswer={() => {
+              this.setState((prevState) => ({
+                step: prevState.step + 1,
+              }));
+            }}
+          />
         );
       case GameType.GENRE:
         return (
