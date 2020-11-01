@@ -1,5 +1,6 @@
 const AVATAR_URL = `https://www.placecage.com/`;
 
+
 export default [
   {
     type: `genre`,

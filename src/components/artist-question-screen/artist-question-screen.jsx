@@ -61,6 +61,7 @@ const ArtistQuestionScreen = (props) => {
             </div>
           ))}
         </form>
+
       </section>
     </section>
   );
