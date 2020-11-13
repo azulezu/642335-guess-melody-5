@@ -4,7 +4,10 @@
 HOC вернёт новый компонент и через render-prop прокинет AudioPlayer
 */
 import React, {PureComponent} from 'react';
-import AudioPlayer from "../../components/audio-player/audio-player";
+import Player from "../../components/audio-player/audio-player";
+import withAudio from "../with-audio/with-audio";
+
+const AudioPlayer = withAudio(Player);
 
 const withAudioPlayer = (Component) => {
   class WithAudioPlayer extends PureComponent {
